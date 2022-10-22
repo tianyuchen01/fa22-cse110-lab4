@@ -31,14 +31,14 @@
 **11. The function will return an array [50, 100, 150].**<br>
     The function returns the array discounted, which is updated to contain each constant discounted price in order calculated from the given prices and the discount. Given the input, the returned array would be [50, 100, 150]. Notice that discounted array is a const, but this only means that discounted is a constant reference and cannot be reassigned to another array. We can still change the elements within discounted.
 
-12. Notations:<br>
+**12.** Notations:<br>
    **A. student.name**<br>
    **B. student["Grad Year"]**<br>
    **C. student.greeting()**<br>
    **D. student["Favorite Teacher"].name**<br>
    **E. student.courseLoad[0]**<br>
 
-13. Arithmetic<br>
+**13.** Arithmetic<br>
    **A. output: '32'**<br>
       number 2 is converted to string '2' to concatenate with string '3'<br>
    **B. output: 1**<br>
@@ -50,13 +50,13 @@
    **E. output: 4**<br>
       true is converted to number 1 to add with 3<br>
    **F. output: 0**<br>
-      false and null are both converted to number 0 to add together
+      false and null are both converted to number 0 to add together<br>
    **G. output: '3undefined'**<br>
       undefined is converted to string 'undefined' to concatenate with string '3'<br>
    **H. output: NaN**<br>
       string '3' is converted to number 3 for this arithmetic expression, but when converting to number, undefined becomes NaN. Therefore, this expression becomes 3 - NaN, which has a result of NaN, which is a computational error.<br>
 
-14. Comparison<br>
+**14.** Comparison<br>
    **A. true**<br>
       string '2' and number 1 are different types, thus they are converted to numbers to compare. '2' is converted to number 2, and since 2 > 1 is true, '2' > 1 is also true.<br>
    **B. false**<br>
@@ -70,8 +70,9 @@
    **F. true**<br>
       Boolean(2) is true. Since true === true, true === Boolean(2).
 
-15. == is non-strict equality check. When the left and right have different types, it will first convert them into numbers and then compare for equality (however, null == undefined is true). === is strict equality check. When the left and right have different types, it will immediately return false without type conversion. It only returns true when both type and value equal.
+**15.** == is non-strict equality check. When the left and right have different types, it will first convert them into numbers and then compare for equality (however, null == undefined is true). === is strict equality check. When the left and right have different types, it will immediately return false without type conversion. It only returns true when both type and value equal.
 
-16. [part2-question16.js](part2-question16.js)
+**16.** [part2-question16.js](part2-question16.js)
 
-17. 
+**17. The result will be an array [2, 4, 6].**<br>
+   modifyArray first create a newArr, then it has a for loop to push things into newArr. Specifically, in line 4, callback(array[i]) represents doSomething(array[i]), which returns 2 times the i-th indexed number in the given array. Therefore, newArr has the same size of the given array, and each element in newArr is 2 times the corresponding element in the given array. Thus, the result is a new array [2, 4, 6].
