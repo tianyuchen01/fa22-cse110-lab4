@@ -68,7 +68,7 @@
    **E. false**<br>
       boolean true and number 2 are of different types, thus true is converted to number 1. Since 1 == 2 is false, true == 2 is false.<br>
    **F. true**<br>
-      Boolean(2) is true. Since true === true, true === Boolean(2).
+      Boolean(2) is true. Since true === true, true === Boolean(2).<br>
 
 **15.** == is non-strict equality check. When the left and right have different types, it will first convert them into numbers and then compare for equality (however, null == undefined is true). === is strict equality check. When the left and right have different types, it will immediately return false without type conversion. It only returns true when both type and value equal.
 
@@ -76,3 +76,11 @@
 
 **17. The result will be an array [2, 4, 6].**<br>
    modifyArray first create a newArr, then it has a for loop to push things into newArr. Specifically, in line 4, callback(array[i]) represents doSomething(array[i]), which returns 2 times the i-th indexed number in the given array. Therefore, newArr has the same size of the given array, and each element in newArr is 2 times the corresponding element in the given array. Thus, the result is a new array [2, 4, 6].
+
+**18.** [part2-question18.js](part2-question18.js)
+
+**19.** Output is the following:<br>
+1<br>
+4<br>
+3<br>
+2<br>
