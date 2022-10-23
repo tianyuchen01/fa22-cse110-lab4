@@ -14,4 +14,7 @@
 
 **8.** content-type: application/json; charset=utf-8
 
-**9.** fetchData
+**9.** 
+function fetchData() {
+  fetch('./citylots.json')
+}
