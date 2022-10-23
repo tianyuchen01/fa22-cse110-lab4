@@ -1,0 +1,3 @@
+1. The bug was that the inputs num1 and num2 are strings, so when we calculate result as result = num1 + num2, the result will be the concatenation of the two strings instead of the sum of the number representation of the two strings.
+
+2. Use Number(num1) and Number(num2) to convert the input strings num1, num2 to numbers. In this case, the result would also be a number with the value of the sum of the two numbers.
